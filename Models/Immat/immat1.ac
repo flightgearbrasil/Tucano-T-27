@@ -1,0 +1,769 @@
+AC3Db
+MATERIAL "Material" rgb 0.8 0.8 0.8  amb 1 1 1  emis 0 0 0  spec 0.7 0.7 0.7  shi 12  trans 0
+MATERIAL "Gaugelight" rgb 1 1 1  amb 0.2 0.2 0.2  emis 1 1 1  spec 0 0 0  shi 32  trans 0
+MATERIAL "backlit" rgb 0.816803 0.816803 0.816803  amb 0.2 0.2 0.2  emis 0.2 0.2 0.2  spec 0.372264 0.372264 0.372264  shi 17  trans 0
+MATERIAL "lights" rgb 1 1 1  amb 0 0 0  emis 1 1 1  spec 0 0 0  shi 72  trans 0
+MATERIAL "instruments" rgb 1 1 1  amb 0 0 0  emis 0.6 0.6 0.6  spec 0 0 0  shi 72  trans 0
+MATERIAL "dark" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.644771 0.644771 0.644771  shi 6  trans 0.9
+OBJECT world
+kids 42
+OBJECT poly
+name "AFDled3"
+data 8
+Mesh.051
+crease 30.000000
+kids 0
+OBJECT poly
+name "AP-fail"
+data 9
+Plane.104
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82698 0.181438 -0.031685
+-4.82655 0.172514 -0.031685
+-4.82698 0.181438 -0.006886
+-4.82655 0.172514 -0.006886
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.799543 0.0900745
+0 0.799543 0.178433
+2 0.599848 0.178433
+3 0.599848 0.0900745
+kids 0
+OBJECT poly
+name "APtrim-fail"
+data 9
+Plane.103
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82698 0.181438 0.017912
+-4.82655 0.172514 0.017912
+-4.82698 0.181438 0.042711
+-4.82655 0.172514 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.400155 0.0900745
+0 0.400155 0.178433
+2 0.20046 0.178433
+3 0.20046 0.0900745
+kids 0
+OBJECT poly
+name "ARMlites"
+data 9
+Plane.098
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82698 0.181438 -0.006886
+-4.82655 0.172514 -0.006886
+-4.82698 0.181438 0.017912
+-4.82655 0.172514 0.017912
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.599848 0.0900745
+0 0.599848 0.178433
+2 0.400155 0.178433
+3 0.400155 0.0900745
+kids 0
+OBJECT poly
+name "Bezel"
+data 8
+Mesh.157
+crease 30.000000
+kids 0
+OBJECT poly
+name "Bezels.002"
+data 8
+Mesh.078
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/cabin.png"
+crease 30.000000
+numvert 4
+-4.8563 -0.104494 -0.142177
+-4.85195 -0.129123 -0.142177
+-4.85195 -0.129123 -0.079343
+-4.8563 -0.104494 -0.079343
+numsurf 1
+SURF 0x0
+mat 2
+refs 4
+0 0.943531 0.737722
+3 0.943531 0.597996
+2 0.998796 0.597996
+1 0.998796 0.737722
+kids 0
+OBJECT poly
+name "CALT-hi"
+data 9
+Plane.094
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82824 0.208211 0.017912
+-4.82824 0.208211 0.042711
+-4.82782 0.199286 0.017912
+-4.82782 0.199286 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+2 0.400155 0.364646
+0 0.400155 0.453004
+1 0.200461 0.453004
+3 0.200461 0.364646
+kids 0
+OBJECT poly
+name "CBN-door"
+data 9
+Plane.096
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82782 0.199286 -0.006886
+-4.8274 0.190362 -0.006886
+-4.82782 0.199286 0.017912
+-4.8274 0.190362 0.017912
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.599849 0.272551
+0 0.599849 0.360909
+2 0.400155 0.360909
+3 0.400155 0.272551
+kids 0
+OBJECT poly
+name "CDIFF-hi"
+data 9
+Plane.095
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82824 0.208211 -0.031685
+-4.82824 0.208211 -0.006886
+-4.82782 0.199286 -0.031685
+-4.82782 0.199286 -0.006886
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+2 0.799543 0.363827
+0 0.799543 0.452185
+1 0.599849 0.452185
+3 0.599849 0.363827
+kids 0
+OBJECT poly
+name "CRG-door"
+data 9
+Plane.097
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.8274 0.190362 -0.006886
+-4.82698 0.181438 -0.006886
+-4.8274 0.190362 0.017912
+-4.82698 0.181438 0.017912
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.599848 0.181633
+0 0.599849 0.269991
+2 0.400155 0.269991
+3 0.400155 0.181633
+kids 0
+OBJECT poly
+name "EngGauge"
+data 8
+Mesh.019
+crease 30.000000
+kids 0
+OBJECT poly
+name "Flapneedle"
+data 8
+Mesh.053
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/gauges1.png"
+crease 30.000000
+numvert 5
+-4.7589 -0.27752 0.075935
+-4.75477 -0.282399 0.075583
+-4.75477 -0.282399 0.078068
+-4.7589 -0.27752 0.077716
+-4.76165 -0.274265 0.076825
+numsurf 2
+SURF 0x0
+mat 4
+refs 4
+0 0.444655 0.26722
+3 0.444655 0.22439
+2 0.45463 0.22439
+1 0.45463 0.26722
+SURF 0x0
+mat 4
+refs 3
+3 0.444655 0.26722
+0 0.444655 0.22439
+4 0.45463 0.22439
+kids 0
+OBJECT poly
+name "Gauge.001"
+data 8
+Mesh.021
+crease 30.000000
+kids 0
+OBJECT poly
+name "LAC-bus"
+data 9
+Plane.101
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.8274 0.190362 0.017912
+-4.82698 0.181438 0.017912
+-4.8274 0.190362 0.042711
+-4.82698 0.181438 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.400155 0.182912
+0 0.400155 0.271271
+2 0.20046 0.271271
+3 0.20046 0.182912
+kids 0
+OBJECT poly
+name "LAIR-fail"
+data 9
+Plane.105
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82655 0.172514 0.067508
+-4.82698 0.181438 0.067508
+-4.82698 0.181438 0.042711
+-4.82655 0.172514 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.000766456 0.178433
+0 0.000766337 0.0900745
+3 0.20046 0.0900745
+2 0.20046 0.178433
+kids 0
+OBJECT poly
+name "LENV-fail"
+data 9
+Plane.099
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82782 0.199286 0.017912
+-4.8274 0.190362 0.017912
+-4.82782 0.199286 0.042711
+-4.8274 0.190362 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.400155 0.272551
+0 0.400155 0.360909
+2 0.200461 0.360909
+3 0.20046 0.272551
+kids 0
+OBJECT poly
+name "LFP-lo"
+data 9
+Plane.090
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82824 0.208211 0.067508
+-4.82824 0.208211 0.042711
+-4.82782 0.199286 0.067508
+-4.82782 0.199286 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+0 0.000766575 0.453004
+2 0.000766456 0.364646
+3 0.200461 0.364646
+1 0.200461 0.453004
+kids 0
+OBJECT poly
+name "LHgear.lamp"
+data 9
+Plane.178
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/Panels.png"
+crease 30.000000
+numvert 4
+-4.81927 -0.221395 0.152936
+-4.81436 -0.229612 0.152936
+-4.81927 -0.221395 0.130996
+-4.81436 -0.229612 0.130996
+numsurf 1
+SURF 0x10
+mat 3
+refs 4
+0 0.545814 0.405645
+1 0.545814 0.387294
+3 0.586679 0.387294
+2 0.586679 0.405645
+kids 0
+OBJECT poly
+name "LOP-lo"
+data 9
+Plane.092
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.8274 0.190362 0.067508
+-4.82782 0.199286 0.067508
+-4.82782 0.199286 0.042711
+-4.8274 0.190362 0.042711
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.000766456 0.362189
+0 0.000766456 0.273831
+3 0.20046 0.273831
+2 0.200461 0.362189
+kids 0
+OBJECT poly
+name "LwrPanel_0"
+data 8
+Mesh.008
+crease 30.000000
+numvert 4
+-4.74279 -0.193781 -0.220547
+-4.74279 -0.193781 -0.072328
+-4.7428 -0.193781 0.23839
+-4.74279 -0.193781 0.117885
+numsurf 1
+SURF 0x0
+mat 5
+refs 4
+0 0 1
+2 0 0
+3 1 0
+1 1 1
+kids 0
+OBJECT poly
+name "Nosegear.lamp"
+data 9
+Plane.177
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/Panels.png"
+crease 30.000000
+numvert 4
+-4.81927 -0.221395 0.152936
+-4.81927 -0.221395 0.130996
+-4.82418 -0.213178 0.152936
+-4.82418 -0.213178 0.130996
+numsurf 1
+SURF 0x10
+mat 3
+refs 4
+2 0.545814 0.423996
+0 0.545814 0.405645
+1 0.586679 0.405645
+3 0.586679 0.423996
+kids 0
+OBJECT poly
+name "Plane.006"
+data 8
+Mesh.041
+crease 30.000000
+kids 0
+OBJECT poly
+name "RAC-bus"
+data 9
+Plane.102
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.8274 0.190362 -0.031685
+-4.82698 0.181438 -0.031685
+-4.8274 0.190362 -0.006886
+-4.82698 0.181438 -0.006886
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.799543 0.184193
+0 0.799543 0.272551
+2 0.599849 0.272551
+3 0.599848 0.184193
+kids 0
+OBJECT poly
+name "RAIR-fail"
+data 9
+Plane.106
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82698 0.181438 -0.056483
+-4.82655 0.172514 -0.056483
+-4.82698 0.181438 -0.031685
+-4.82655 0.172514 -0.031685
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.999237 0.0900745
+0 0.999237 0.178433
+2 0.799543 0.178433
+3 0.799543 0.0900745
+kids 0
+OBJECT poly
+name "RENV-fail"
+data 9
+Plane.100
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82782 0.199286 -0.031685
+-4.8274 0.190362 -0.031685
+-4.82782 0.199286 -0.006886
+-4.8274 0.190362 -0.006886
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.799543 0.273831
+0 0.799543 0.362189
+2 0.599849 0.362189
+3 0.599849 0.273831
+kids 0
+OBJECT poly
+name "RFP-lo"
+data 9
+Plane.091
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82824 0.208211 -0.056483
+-4.82824 0.208211 -0.031685
+-4.82782 0.199286 -0.056483
+-4.82782 0.199286 -0.031685
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+2 0.999237 0.363827
+0 0.999237 0.452185
+1 0.799543 0.452185
+3 0.799543 0.363827
+kids 0
+OBJECT poly
+name "RHgear.lamp"
+data 9
+Plane.176
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/Panels.png"
+crease 30.000000
+numvert 4
+-4.80944 -0.23783 0.152936
+-4.80944 -0.23783 0.130996
+-4.81436 -0.229612 0.130996
+-4.81436 -0.229612 0.152936
+numsurf 1
+SURF 0x10
+mat 3
+refs 4
+3 0.545814 0.387294
+0 0.545814 0.368943
+1 0.586679 0.368943
+2 0.586679 0.387294
+kids 0
+OBJECT poly
+name "ROP-lo"
+data 9
+Plane.093
+texture "C:/Arquivos de programas/FlightGear/data/Aircraft/b1900d/Models/warning-panel.png"
+crease 30.000000
+numvert 4
+-4.82782 0.199286 -0.056483
+-4.8274 0.190362 -0.056483
+-4.82782 0.199286 -0.031685
+-4.8274 0.190362 -0.031685
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+1 0.999237 0.271271
+0 0.999237 0.359629
+2 0.799543 0.359629
+3 0.799543 0.271271
+kids 0
+OBJECT poly
+name "warningpanel.off.001"
+data 9
+Plane.001
+crease 30.000000
+kids 0
+OBJECT poly
+name "warningpanel.off.010"
+data 9
+Plane.017
+crease 30.000000
+kids 0
+OBJECT poly
+name "ImatFuselageL1"
+loc 3.70033 -0.638167 -0.908855
+data 8
+Mesh.002
+texture "immat.png"
+crease 30.000000
+numvert 4
+2.86794 0.326779 1.47672
+3.12667 0.072342 1.32014
+2.86794 0.072342 1.43033
+3.12667 0.326779 1.33867
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.875
+2 0 0.28125
+1 0.0219727 0.28125
+3 0.0219727 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageL2"
+loc 3.71584 -0.631212 -0.797555
+data 8
+Mesh.003
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.38539 0.326779 1.20684
+3.38539 0.072342 1.19308
+3.12667 0.072342 1.32014
+3.12667 0.326779 1.33867
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0.0219727 0.875
+3 0 0.875
+2 0 0.28125
+1 0.0219727 0.28125
+kids 0
+OBJECT poly
+name "ImatFuselageL3"
+loc 3.73564 -0.624256 -0.680933
+data 8
+Mesh.004
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.64411 0.072342 1.06602
+3.38539 0.326779 1.20684
+3.38539 0.072342 1.19308
+3.64411 0.326653 1.07506
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0.0219727 0.28125
+3 0.0219727 0.875
+1 0 0.875
+2 0 0.28125
+kids 0
+OBJECT poly
+name "ImatFuselageL4"
+loc 3.74259 -0.624256 -0.55487
+data 8
+Mesh.005
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.64411 0.072342 1.06602
+3.90283 0.072342 0.938957
+3.90283 0.326089 0.943463
+3.64411 0.326653 1.07506
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.28125
+1 0.0219727 0.28125
+2 0.0219727 0.875
+3 0 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageL5"
+loc 3.74794 -0.624256 -0.44077
+data 8
+Mesh.006
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.90283 0.072342 0.938957
+3.90283 0.326089 0.943463
+4.16155 0.326779 0.811341
+4.16155 0.072342 0.811897
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.28125
+3 0.0219727 0.28125
+2 0.0219727 0.875
+1 0 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageL6"
+loc 3.77042 -0.624256 -0.339512
+data 8
+Mesh.007
+texture "immat.png"
+crease 30.000000
+numvert 4
+4.16155 0.326779 0.811341
+4.16155 0.072342 0.811897
+4.42028 0.072342 0.680625
+4.42028 0.326779 0.679508
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.875
+1 0 0.28125
+2 0.0219727 0.28125
+3 0.0219727 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageR1"
+loc 3.78047 -0.626019 0.419122
+data 8
+Mesh.008
+texture "immat.png"
+crease 30.000000
+numvert 4
+4.16155 0.072342 -0.811893
+4.16155 0.326167 -0.792136
+4.42028 0.326779 -0.671794
+4.42028 0.072342 -0.68062
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0.0219727 0.28125
+1 0.0219727 0.875
+2 0 0.875
+3 0 0.28125
+kids 0
+OBJECT poly
+name "ImatFuselageR2"
+loc 3.74936 -0.591958 0.517209
+data 8
+Mesh.009
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.90283 0.072342 -0.938954
+4.16155 0.072342 -0.811893
+4.16155 0.326167 -0.792136
+3.90283 0.326779 -0.912486
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0.0219727 0.28125
+3 0.0219727 0.875
+2 0 0.875
+1 0 0.28125
+kids 0
+OBJECT poly
+name "ImatFuselageR3"
+loc 3.71499 -0.608988 0.632606
+data 8
+Mesh.010
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.90283 0.072342 -0.938954
+3.64411 0.072342 -1.06602
+3.64411 0.326779 -1.05191
+3.90283 0.326779 -0.912486
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.28125
+1 0.0219727 0.28125
+2 0.0219727 0.875
+3 0 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageR4"
+loc 3.72804 -0.628497 0.748495
+data 8
+Mesh.011
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.38539 0.0719869 -1.19308
+3.64411 0.0719869 -1.06602
+3.38539 0.325175 -1.19338
+3.64411 0.325175 -1.05191
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0.0219727 0.28125
+2 0.0219727 0.875
+3 0 0.875
+1 0 0.28125
+kids 0
+OBJECT poly
+name "ImatFuselageR5"
+loc 1.81011 -0.0469725 0.067162
+data 8
+Mesh.012
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.38539 0.072342 -1.19308
+3.12667 0.326779 -1.33485
+3.38539 0.326779 -1.19338
+3.12667 0.072342 -1.32014
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.28125
+3 0.0219727 0.28125
+1 0.0219727 0.875
+2 0 0.875
+kids 0
+OBJECT poly
+name "ImatFuselageR6"
+loc 1.81011 -0.0469725 0.067162
+data 8
+Mesh.001
+texture "immat.png"
+crease 30.000000
+numvert 4
+3.12667 0.326779 -1.33485
+2.86794 0.072342 -1.46121
+3.12667 0.072342 -1.32014
+2.86794 0.326779 -1.47092
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 0 0.875
+2 0 0.28125
+1 0.0219727 0.28125
+3 0.0219727 0.875
+kids 0

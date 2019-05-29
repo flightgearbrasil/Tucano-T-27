@@ -1,0 +1,25 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "shadow"
+loc 1.46275 -1.73882 -0.0203794
+data 6
+shadow
+texture "shadow.png"
+crease 30.000000
+numvert 4
+-5.63721 0 -5.68063
+-5.63721 0 5.68063
+5.63721 0 5.68063
+5.63721 0 -5.68063
+numsurf 1
+SURF 0x0
+mat 0
+refs 4
+0 6.49691e-005 0.996042
+1 6.49691e-005 0
+2 1 5.96046e-008
+3 1 0.996042
+kids 0

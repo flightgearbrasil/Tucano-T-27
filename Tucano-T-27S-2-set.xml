@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Super Tucano config file
+David Culp,  davidculp2@comcast.net
+License: Freeware, Non-Commercial
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+  <description>Tucano-T-27-2 Super</description>
+  <author>David Culp, Alpha Simulations, Isaias Prestes, Aurino Neves (Adapt), Rodrigo Chaves (texture)</author>
+  <status>alpha</status>
+
+  <flight-model>jsb</flight-model>
+  <aero>Tucano-T-27S</aero>
+
+  <startup>
+   <splash-texture>Aircraft/Tucano-T-27/splash.png</splash-texture>
+  </startup>
+
+  <systems>
+   <electrical>
+   </electrical>
+  </systems> 
+
+  <sound>
+   <path>Aircraft/Tucano-T-27/Sounds/tucano-sound.xml</path>
+  </sound>
+
+  <submodels> 
+    <serviceable type="bool">true</serviceable>
+    <path>Aircraft/Tucano-T-27/submodels.xml</path>
+  </submodels>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+
+  <model>
+   <path archive="y">Aircraft/Tucano-T-27/Models/Tucano-T-27-2.xml</path>
+  </model>
+       
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <pitch-offset-deg>-4.0</pitch-offset-deg>
+    <x-offset-m archive="y">0.0</x-offset-m><!-- right/left -->
+    <y-offset-m archive="y">0.68</y-offset-m><!-- up/down -->
+    <z-offset-m archive="y">-0.32</z-offset-m><!-- aft/fore -->
+   </config>
+  </view>
+  
+  <view n="102">
+   <name>Copilot View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <ground-level-nearplane-m type="double">6f</ground-level-nearplane-m>
+    <x-offset-m type="double">0.0</x-offset-m>
+    <y-offset-m type="double">0.818359</y-offset-m>
+    <z-offset-m type="double">1.02483</z-offset-m>
+    <pitch-offset-deg>-10</pitch-offset-deg>
+    <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
+   </config>
+   <dynamic>
+    <enabled type="bool">false</enabled>
+   </dynamic>
+  </view>
+  
+
+  <chase-distance-m type="double" archive="y">-15.0</chase-distance-m>
+
+  <flaps>
+   <setting>0.00</setting>
+   <setting>0.49</setting> 
+   <setting>1.00</setting> 
+  </flaps>
+  
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+      </generic>
+    </multiplay>  
+
+  <help>
+   <key>
+    <name>Shift-Q</name>
+    <desc>fuel cutoff switch or lever</desc>
+   </key>
+   <key>
+    <name>m (lower case m) </name>
+    <desc>Nose wheel steering</desc>
+   </key>
+   <key>
+    <name>c (lower case c) </name>
+    <desc>Open/Close canopy</desc>
+   </key>   
+      <key>
+        <name>S (upper case s)</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u (lower case u)</name>
+        <desc>Stop smoke</desc>
+      </key>
+  </help>
+  
+  
+<!-- Entradas para o menu de apoio para controle da aeronave -->
+		<menubar>
+			<default>
+			 <!--menu n="5">
+         <item n="10">
+          <label>Pushback</label>
+          <name>pushback</name>
+            <binding>
+              <command>dialog-show</command>
+              <dialog-name>pushback</dialog-name>
+            </binding>
+        </item>
+       </menu-->
+
+				<menu n="100">
+					<label>EMB-312 T-27 Tucano</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.open()</script>
+						</binding>
+					</item>
+
+			      <item>
+			        <label>Blue smoke</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 0);
+			          </script>
+			        </binding>
+			      </item>
+			      <item>
+			        <label>White smoke</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 1);
+			          </script>
+			        </binding>
+			      </item>
+			      <item>
+			        <label>Red smoke</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 2);
+			          </script>
+			        </binding>
+			      </item>
+			      <item>
+			        <label>Green smoke</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 3);
+			          </script>
+			        </binding>
+			      </item>			      
+			      <item>
+			        <label>Yellow smoke</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 4);
+			          </script>
+			        </binding>
+			      </item>		
+			      <item>
+			        <label>Fire effects</label>
+			        <binding>
+			          <command>nasal</command>
+			          <script>
+			            var p = "sim/multiplay/generic/int[7]";
+			            setprop(p, 5);
+			          </script>
+			        </binding>
+			      </item>	
+			      			
+			      <item>
+						<label>Left Engine Starter</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/engines/engine/starter</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+					<item>
+						<label>Left Engine CutOff</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/engines/engine/cutoff</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+
+					<item>
+						<label>Beacon Lights On/Off</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/lighting/beacon</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/switches/beacon</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+					<item>
+						<label>Taxi Light On/Off</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/switches/taxi-lights</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/lighting/taxi-light</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+        <item>
+						<label>Landing Lights On/Off</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/switches/landing-light</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/lighting/landing-lights</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+					<item>
+						<label>Navigation Lights On/Off</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/switches/nav-lights</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/lighting/nav-lights</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+					<item>
+						<label>Strobe Lights On/Off</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/lighting/Strobe</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>controls/switches/Strobe</property>
+						</binding>
+						<binding>
+							<command>property-toggle</command>
+							<property>/sim/sound/switch</property>
+						</binding>
+					</item>
+<item>
+      <label>Airport Operations</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+	  var mal = gui.Dialog.new("/sim/gui/dialogs/Boeing747/menu/dialog", 
+                                                              "Aircraft/Tucano-T-27/Dialogs/Airportoperations-dialog.xml");
+        mal.open();
+       </script>
+      </binding>
+     </item>
+
+
+				</menu>
+				<menu n="100">
+
+					<item >
+						<label>Pushback</label>
+						<name>pushback</name>
+						<binding>
+							<command>dialog-show</command>
+							<dialog-name>pushback</dialog-name>
+						</binding>
+					</item>
+
+				</menu>
+			</default>
+		</menubar>
+
+ </sim>
+
+ <controls>
+  <flight>
+   <elevator-trim>-0.07</elevator-trim>
+  </flight>
+  <lighting>
+   <instruments-norm>0.3</instruments-norm>
+  </lighting>
+  <armament>
+   <gunsight>
+    <power-on type="bool">true</power-on>
+    <intensity type="double">1.0</intensity>
+   </gunsight>
+  </armament>
+  <gear>
+   <brake-parking type="double">1</brake-parking>
+  </gear>
+ </controls>
+ 
+  <controls>
+    <smoke alias="/sim/multiplay/generic/int[6]"/>
+    <color type="int" alias="/sim/multiplay/generic/int[7]">0</color>
+  </controls>
+  
+ 
+
+ <engines>
+  <engine n="0">
+   <running>true</running>
+  </engine>
+ </engines>
+
+<input>
+ <keyboard>
+ 
+ <key n="33">
+  <name>Shift 1</name>
+  <desc>Set smoke color BLUE</desc>
+  <binding>
+   <command>property-assign</command>
+   <property>sim/multiplay/generic/int[7]</property>
+   <value type="int">0</value>
+  </binding>
+ </key>
+
+ <key n="64">
+  <name>Shift 2</name>
+  <desc>Set smoke color WHITE</desc>
+  <binding>
+   <command>property-assign</command>
+   <property>sim/multiplay/generic/int[7]</property>
+   <value type="int">1</value>
+  </binding>
+ </key>
+
+ <key n="35">
+  <name>Shift 3</name>
+  <desc>Set smoke color RED</desc>
+  <binding>
+   <command>property-assign</command>
+   <property>sim/multiplay/generic/int[7]</property>
+   <value type="int">2</value>
+  </binding>
+ </key>
+
+ <key n="36">
+  <name>Shift 4</name>
+  <desc>Set smoke color GREEN</desc>
+  <binding>
+   <command>property-assign</command>
+   <property>sim/multiplay/generic/int[7]</property>
+   <value type="int">3</value>
+  </binding>
+ </key>
+
+ <key n="37">
+  <name>Shift 5</name>
+  <desc>Set smoke color YELLOW</desc>
+  <binding>
+   <command>property-assign</command>
+   <property>sim/multiplay/generic/int[7]</property>
+   <value type="int">4</value>
+  </binding>
+ </key>
+ 
+
+  <key n="83">
+    <name>S</name>
+    <desc>Start smoke</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>sim/multiplay/generic/int[6]</property>
+      <value>true</value>
+    </binding>
+  </key>
+
+  <key n="117">
+    <name>u</name>
+    <desc>Stop smoke</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>sim/multiplay/generic/int[6]</property>
+      <value>false</value>
+    </binding>
+  </key>
+  
+    <key n="99">
+     <name>c</name>
+     <desc>toggle canopy</desc>
+     <binding>
+       <command>property-toggle</command>
+       <property>fdm/jsbsim/systems/canopy/command</property>
+     </binding>
+    </key> 
+  
+
+    <key n="109">
+     <name>m</name>
+     <desc>engage nose wheel steering</desc>
+     <binding>
+      <command>property-assign</command>
+      <property>fdm/jsbsim/systems/NWS/engaged</property>
+      <value>1</value> 
+     </binding>
+     <mod-up>
+       <binding>
+        <command>property-assign</command>
+        <property>fdm/jsbsim/systems/NWS/engaged</property>
+        <value>0</value> 
+       </binding>
+     </mod-up>
+    </key>
+
+
+ <key n="81">
+  <name>Shift-Q</name>
+  <desc>Fuel Cutoff Switch or Lever.</desc>
+  <binding>
+   <condition>
+    <property>/sim/input/selected/engine[0]</property>
+   </condition>
+   <command>property-toggle</command>
+   <property>/controls/engines/engine[0]/cutoff</property>
+  </binding>
+ </key>
+
+ </keyboard>
+</input>
+
+ <instrumentation>
+  <marker-beacon>
+    <volume type="double" archive="y">0.0</volume>
+  </marker-beacon>
+  <rdmi-mode type="int">0</rdmi-mode> <!-- 0=TAC, 1=VOR, 2=ADF -->
+ </instrumentation>
+
+<nasal>
+	<T-27>
+			<file>Aircraft/T-27/Nasal/T-27.nas</file>
+	</T-27>
+</nasal>
+
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us archive="y">118</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">118</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+
+ <fdm>
+  <jsbsim>
+   <systems>
+    <NWS>
+      <engaged type="double">0</engaged>
+    </NWS>
+    <canopy>
+      <command type="double">0</command>
+    </canopy>
+    <armament>
+      <station1>
+        <selected type="double">0</selected>
+      </station1>
+      <station2>
+        <selected type="double">0</selected>
+      </station2>
+      <station3>
+        <selected type="double">0</selected>
+      </station3>
+      <station4>
+        <selected type="double">0</selected>
+      </station4>
+      <station5>
+        <selected type="double">0</selected>
+      </station5>
+    </armament> 
+   </systems> 
+  </jsbsim>
+ </fdm>
+
+ <station-selected type="int">1</station-selected>
+
+ <canopy>
+  <position-norm type="double">0</position-norm>
+ </canopy>
+               <!-- pushback -->
+<!--thruster x="19.28"  y="0.00" z="-5.55" vx="1" vy="0" vz="0" thrust="15000">
+ <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster--> 
+
+</PropertyList>

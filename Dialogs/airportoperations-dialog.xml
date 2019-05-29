@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <name>Airport Operations</name>
+  <layout>vbox</layout>
+
+  <text>
+    <label>Airport Operations</label>
+  </text>
+
+  <hrule/>
+
+  <group>
+    <layout>vbox</layout>
+    <halign>left</halign>
+
+  <text>
+      <label>Check a box to start the departure/arrival procedure.</label>
+   </text>
+     
+    <checkbox>
+      <halign>left</halign>
+      <label>Chocks</label>
+      <property>controls/switches/chocks</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/chocks</property>
+      </binding>
+    </checkbox>
+
+   <checkbox>
+      <halign>left</halign>
+      <label>Engine Safety Cones</label>
+      <property>controls/switches/cones</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cones</property>
+      </binding>
+    </checkbox>
+
+   <checkbox>
+      <halign>left</halign>
+      <label>GPU</label>
+      <property>controls/switches/gpu</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/gpu</property>
+      </binding>
+    </checkbox> 
+    
+  <checkbox>
+      <halign>left</halign>
+      <label>Fuel Truck</label>
+      <property>controls/switches/Fuel</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/Fuel</property>
+      </binding>
+    </checkbox> 
+
+<checkbox>
+      <halign>left</halign>
+      <label>Engine Protection</label>
+      <property>controls/switches/protection</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/protection</property>
+      </binding>
+    </checkbox>
+
+<checkbox>
+      <halign>left</halign>
+      <label>Piloto</label>
+      <property>controls/switches/piloto</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/piloto</property>
+      </binding>
+    </checkbox>
+
+   <checkbox>
+      <halign>left</halign>
+      <label>Co-piloto</label>
+      <property>/controls/switches/co-piloto</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/switches/co-piloto</property>
+      </binding>
+    </checkbox>  
+   
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend>Close</legend>
+      <default>true</default>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+    <empty><stretch>true</stretch></empty>
+  </group>
+
+</PropertyList>
